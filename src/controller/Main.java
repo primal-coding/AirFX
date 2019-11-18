@@ -1,13 +1,10 @@
-package sample;
+package controller;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import javafx.scene.layout.VBox;
-import javafx.scene.text.Text;
 
 import java.io.IOException;
 
@@ -36,7 +33,7 @@ public class Main extends Application {
     public void mainWindow(){
 
         try {
-            FXMLLoader loader = new FXMLLoader(Main.class.getResource("MainWindowView.fxml"));
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../view/MainWindowView.fxml"));
             AnchorPane pane = loader.load();
 
             MainWindowController mainWindowController = loader.getController();
